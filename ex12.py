@@ -1,0 +1,10 @@
+valore_ arr = [3,5,6,7,32]
+print(type(valore_arr))
+print(valore_arr)
+print(max(valore_arr))
+print(min(valore_arr))
+print(sum(valore_arr))
+print(sorted(valore_arr))
+print(valore_arr)
+print(valore_arr.count(3))
+print(valore_arr.index(3))
