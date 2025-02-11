@@ -34,3 +34,39 @@ plt.tight_layout()  # Ajustar o layout para que os rótulos não saiam da tela
 
 # Exibir o gráfico
 plt.show()
+
+
+# calculo media aritimedica
+soma_notas = sum(notas)
+media_aritmetica = soma_notas / len(notas)
+print("Média Aritmética:", media_aritmetica)
+
+# menor nota entre alunos
+menor_nota = min(notas)
+
+for aluno in notas:
+    if menor_nota == aluno:
+        n = notas.index(aluno)
+        nome_aluno_menor_nota = nome_alunos[n]
+        print(nome_aluno_menor_nota)
+        break
+
+print("Menor Nota:", menor_nota, nome_aluno_menor_nota)
+
+# maior nota entre alunos
+maior_nota = max(notas)
+nome_aluno_maior_nota = nome_alunos[notas.index(maior_nota)]
+print(nome_aluno_maior_nota)
+print("Maior Nota:", maior_nota,nome_aluno_maior_nota)
+
+
+# calculo moda das notas
+from statistics import multimode
+moda_notas = multimode(notas)
+print("Moda das Notas:", moda_notas)
+
+array_numeros = [3,9,1,9,7,8,10,4,5,4]
+moda_array = multimode(array_numeros)
+print("Moda do Array de Numeros:", moda_array)
+
+
