@@ -70,3 +70,20 @@ moda_array = multimode(array_numeros)
 print("Moda do Array de Numeros:", moda_array)
 
 
+# Read the CSV file
+
+# https://www.datacamp.com/pt/tutorial/pandas-read-csv
+
+notas_data = pd.read_csv("notas.csv")
+
+# View the first 5 rows
+notas_data.head()
+
+
+# Defining the columns to read
+usecols = ["nome_aluno", "nota"]
+
+# Read data with subset of columns
+notas_data = pd.read_csv("notas.csv", index_col="nome_aluno", usecols=usecols)
+# Preview first 5 rows
+notas_data .head()
